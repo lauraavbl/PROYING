@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="247.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proy.controladoras.LoginController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="74.0" prefWidth="601.0" text="LOGIN" textAlignment="CENTER" />
+            <HBox alignment="CENTER" prefHeight="46.0" prefWidth="490.0" spacing="20.0">
+               <children>
+                  <Label text="USUARIO" />
+                  <TextField fx:id="usertext" alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="130.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="84.0" prefHeight="46.0" prefWidth="490.0" spacing="15.0">
+               <children>
+                  <Label text="PASSWORD" />
+                  <PasswordField fx:id="passwordtext" prefHeight="24.0" prefWidth="130.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ShowBack" text="Volver" />
+                  <HBox prefHeight="36.0" prefWidth="31.0" />
+                  <Button layoutX="121.0" layoutY="16.0" mnemonicParsing="false" onAction="#ShowIngresar" text="Ingresar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proy.controladoras.RegisterController">
+   <center>
+      <VBox prefHeight="498.0" prefWidth="703.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="44.0" prefWidth="606.0" text="Ingrese sus datos" />
+            <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label text="Nombre:" />
+                  <TextField fx:id="nameField" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="54.0" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label text="Apellido" />
+                  <TextField fx:id="lastNameField" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label text="ContraseÃ±a" />
+                  <PasswordField fx:id="passWordField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Cedula" />
+                  <TextField fx:id="ciField" alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Sexo" />
+                  <TextField fx:id="sexField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="161.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Fecha" />
+                  <TextField fx:id="fechaField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="218.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Estado civil" />
+                  <TextField fx:id="estadoCivil" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="302.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Direccion" />
+                  <TextField fx:id="addressField" prefHeight="25.0" prefWidth="457.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="266.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Telefono" />
+                  <TextField fx:id="telField" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="413.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Ocupacion" />
+                  <TextField fx:id="ocupacion" />
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="217.0">
+                     <children>
+                        <Label text="Profesion" />
+                        <TextField fx:id="profesion" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="367.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Telefono 2:" />
+                  <TextField fx:id="telefonoref" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="475.0" prefHeight="57.0" prefWidth="600.0">
+               <children>
+                  <Label text="Rol" />
+                  <ComboBox fx:id="rolbox" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="666.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ShowBack" text="Volver" />
+                  <HBox prefHeight="57.0" prefWidth="71.0" />
+                  <Button layoutX="280.0" layoutY="27.0" mnemonicParsing="false" onAction="#submitFields" text="Enviar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
